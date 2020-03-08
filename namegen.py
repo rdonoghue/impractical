@@ -1,4 +1,5 @@
-import sys, random
+import sys
+import random
 
 print("Welcome to the Psych style name Generator.\n")
 print("-------------------------------------------\n\n")
@@ -35,14 +36,14 @@ last = ('Appleyard', 'Bigmeat', 'Bloominshine', 'Boogerbottom',
         'Woolysocks')
 
 while True:
-    firstname=random.choice(first)
-    lastname=random.choice(last)
+    firstname = random.choice(first)
+    lastname = random.choice(last)
 
-##    print("Your name is:",end=" ")
-    print("{} {}".format(firstname,lastname), file=sys.stderr)
+#    print("Your name is:",end=" ")
+    print("{} {}".format(firstname, lastname), file=sys.stderr)
 
-    try_again=input("Try Again? (enter to continue, n to quit): ")
-##    print("the input was",try_again)
+    try_again = input("Try Again? (enter to continue, n to quit): ")
+#    print("the input was",try_again)
 
     if try_again.lower() == "n":
         break
