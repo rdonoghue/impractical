@@ -9,3 +9,4 @@ def test_subtraction():
 def test_multiplication():
     assert 2*2 == 4
     assert 10*5 == 50
+
