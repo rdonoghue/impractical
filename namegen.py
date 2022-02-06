@@ -1,5 +1,5 @@
 """
-Psych Name Generatorn
+Psych Name Generator
 """
 import sys
 import random
