@@ -1,10 +1,13 @@
+"""
+Psych Name Generatorn
+"""
 import sys
 import random
 
 print("Welcome to the Psych style name Generator.\n")
 print("-------------------------------------------\n\n")
 
-first = ('Baby Oil', 'Bad News', 'Big Burps', "Bill 'Beenie-Weenie'",
+First = ('Baby Oil', 'Bad News', 'Big Burps', "Bill 'Beenie-Weenie'",
          "Bob 'Stinkbug'", 'Bowel Noises', 'Boxelder', "Bud 'Lite' ",
          'Butterbean', 'Buttermilk', 'Botox', 'Chad', 'Chesterfield',
          'Chewy', 'Chigger', 'Cinnabuns', 'Cleet', 'Cornbread', 'Crab Meat',
@@ -20,7 +23,7 @@ first = ('Baby Oil', 'Bad News', 'Big Burps', "Bill 'Beenie-Weenie'",
          'Storyboard', 'Sweet Tea', 'TeeTee', 'Wheezy Joe',
          "Winston 'Jazz Hands'", 'Worms')
 
-last = ('Appleyard', 'Bigmeat', 'Bloominshine', 'Boogerbottom',
+Last = ('Appleyard', 'Bigmeat', 'Bloominshine', 'Boogerbottom',
         'Breedslovetrout', 'Butterbaugh', 'Clovenhoof', 'Clutterbuck',
         'Cocktoasten', 'Endicott', 'Fewhairs', 'Gooberdapple', 'Goodensmith',
         'Goodpasture', 'Guster', 'Henderson', 'Hooperbag', 'Hoosenater',
@@ -36,16 +39,16 @@ last = ('Appleyard', 'Bigmeat', 'Bloominshine', 'Boogerbottom',
         'Woolysocks')
 
 while True:
-    firstname = random.choice(first)
-    lastname = random.choice(last)
+    Firstname = random.choice(First)
+    Lastname = random.choice(Last)
 
 #    print("Your name is:",end=" ")
-    print("{} {}".format(firstname, lastname), file=sys.stderr)
+    print("{} {}".format(Firstname, Lastname), file=sys.stderr)
 
-    try_again = input("Try Again? (enter to continue, n to quit): ")
+    Try_again = input("Try Again? (enter to continue, n to quit): ")
 #    print("the input was",try_again)
 
-    if try_again.lower() == "n":
+    if Try_again.lower() == "n":
         break
 
 input("\n\nPress enter to exit")
